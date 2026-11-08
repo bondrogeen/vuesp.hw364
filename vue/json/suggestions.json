@@ -1,0 +1,5 @@
+[
+  { "label": "clear", "type": "func", "detail": "clear display show()" },
+  { "label": "show", "type": "func", "detail": "show display show()" },
+  { "label": "lcd", "type": "func", "detail": "set text display lcd(text:string,cursor_h:number,cursor_v:number)" }
+]
