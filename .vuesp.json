@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vuesp.ru/schema/vuesp-project.json",
+  "name": "vuesp.hw364",
+  "summary": "HW-364 OLED display with SSD1306 graphics and ScriptRunner LCD functions.",
+  "description": "## Vuesp HW-364\n\nESP8266 project for the HW-364 OLED module with an SSD1306 128x64 display connected over I2C (SDA 14, SCL 12).\n\nScriptRunner exposes the `lcd`, `show` and `clear` functions, and the `$display` variable can be used to print values from automation scripts. The standard Vuesp dashboard, GPIO, Wi-Fi and OTA features are included.",
+  "platforms": [
+    "ESP8266"
+  ],
+  "tags": [
+    "oled",
+    "ssd1306",
+    "display",
+    "i2c",
+    "esp8266"
+  ],
+  "createdWith": "vuesp-create@1.0.1",
+  "createdAt": "2026-11-09T01:09:13+03:00",
+  "template": {
+    "source": "local",
+    "ref": "local",
+    "commit": "8ebddcfc6f90135d6b2c1532c29eac0fd293f4ae"
+  }
+}
