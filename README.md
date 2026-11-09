@@ -1,8 +1,14 @@
 # vuesp.hw364
 
+![HW-364A / HW-364B](github/images/hw364/board.svg)
+
 OLED-дисплей HW-364, функции `lcd`, `show`, `clear` и управление выводами.
 
 Проект собран на базе шаблона [Vuesp](https://github.com/bondrogeen/vuesp): прошивка PlatformIO + web UI на Vue 3 и `vuesp-components`.
+
+## Документация
+
+Подробное описание платы, распиновка, схема I2C, примеры ScriptRunner и ограничения — в [DOCS.md](./DOCS.md).
 
 ## Плата и окружение
 

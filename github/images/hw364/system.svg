@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" fill="none" font-family="Inter, Roboto, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1200" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#05081f"/>
+      <stop offset="1" stop-color="#07112c"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 1l10 5-10 5" fill="none" stroke="#6ee7b7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="620" rx="28" fill="url(#bg3)"/>
+  <g opacity="0.14" stroke="#94a3b8" stroke-width="1">
+    <path d="M0 80h1200M0 160h1200M0 240h1200M0 320h1200M0 400h1200M0 480h1200M0 560h1200"/>
+    <path d="M80 0v620M160 0v620M240 0v620M320 0v620M400 0v620M480 0v620M560 0v620M640 0v620M720 0v620M800 0v620M880 0v620M960 0v620M1040 0v620M1120 0v620"/>
+  </g>
+
+  <text x="80" y="72" fill="#6ee7b7" font-size="15" font-weight="700" letter-spacing="3">VUESP · HW-364</text>
+  <text x="80" y="122" fill="#ffffff" font-size="38" font-weight="800">Как устроен проект</text>
+  <text x="80" y="156" fill="#94a3b8" font-size="17">Браузер → Wi-Fi → ESP8266 → I2C → OLED</text>
+
+  <!-- browser -->
+  <rect x="70" y="230" width="250" height="190" rx="18" fill="#0d1b42" stroke="#1e3a6e" stroke-width="2"/>
+  <rect x="94" y="254" width="202" height="28" rx="6" fill="#111827" stroke="#374151" stroke-width="1"/>
+  <circle cx="110" cy="268" r="4" fill="#f87171"/><circle cx="124" cy="268" r="4" fill="#fbbf24"/><circle cx="138" cy="268" r="4" fill="#34d399"/>
+  <text x="195" y="320" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="800">Vue UI</text>
+  <text x="195" y="348" text-anchor="middle" fill="#94a3b8" font-size="13">Dashboard · GPIO</text>
+  <text x="195" y="370" text-anchor="middle" fill="#94a3b8" font-size="13">ScriptRunner · OTA</text>
+  <text x="195" y="398" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="700" letter-spacing="1">БРАУЗЕР</text>
+
+  <!-- wifi arrows -->
+  <g stroke="#6ee7b7" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M320 310h90"/>
+    <path d="M410 350h-90"/>
+  </g>
+  <text x="365" y="292" text-anchor="middle" fill="#6ee7b7" font-size="12" font-weight="700">Wi-Fi</text>
+  <text x="365" y="374" text-anchor="middle" fill="#94a3b8" font-size="12">WebSocket</text>
+
+  <!-- ESP -->
+  <rect x="440" y="200" width="330" height="270" rx="20" fill="#0d1b42" stroke="#10b981" stroke-width="2"/>
+  <text x="605" y="246" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="800">ESP8266</text>
+  <text x="605" y="274" text-anchor="middle" fill="#94a3b8" font-size="13">Vuesp firmware</text>
+  <g font-size="13" fill="#cbd5e1">
+    <text x="470" y="318">WebServer</text>
+    <text x="470" y="346">WebSocket</text>
+    <text x="470" y="374">ScriptRunner</text>
+    <text x="470" y="402">LittleFS</text>
+    <text x="470" y="430">OTA update</text>
+  </g>
+  <g fill="#6ee7b7">
+    <circle cx="700" cy="313" r="4"/><circle cx="700" cy="341" r="4"/><circle cx="700" cy="369" r="4"/><circle cx="700" cy="397" r="4"/><circle cx="700" cy="425" r="4"/>
+  </g>
+  <text x="605" y="462" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="700" letter-spacing="1">ЛОКАЛЬНАЯ ПРОШИВКА</text>
+
+  <!-- i2c arrow -->
+  <path d="M770 335h80" stroke="#28b7f0" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="810" y="318" text-anchor="middle" fill="#7dd3fc" font-size="12" font-weight="700">I2C</text>
+  <text x="810" y="362" text-anchor="middle" fill="#94a3b8" font-size="11">2 провода</text>
+
+  <!-- OLED -->
+  <rect x="860" y="220" width="270" height="230" rx="18" fill="#031a1a" stroke="#10b981" stroke-width="2"/>
+  <rect x="886" y="246" width="218" height="130" rx="8" fill="#020617" stroke="#134e4a" stroke-width="2"/>
+  <text x="995" y="286" text-anchor="middle" fill="#6ee7b7" font-size="17" font-weight="800">SSD1306</text>
+  <text x="995" y="312" text-anchor="middle" fill="#e2e8f0" font-size="13">128 × 64 · 0.96″</text>
+  <text x="995" y="338" text-anchor="middle" fill="#94a3b8" font-size="11">SDA 14 · SCL 12</text>
+  <text x="995" y="360" text-anchor="middle" fill="#10b981" font-size="11" font-weight="700">0x3C</text>
+  <text x="995" y="420" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="700" letter-spacing="1">OLED НА ПЛАТЕ</text>
+
+  <!-- bottom commands -->
+  <rect x="70" y="510" width="1060" height="66" rx="12" fill="#0b1538" stroke="#1e3a6e" stroke-width="1"/>
+  <text x="100" y="538" fill="#fbbf24" font-size="13" font-weight="700">ScriptRunner</text>
+  <text x="100" y="560" fill="#cbd5e1" font-size="13">lcd('Текст', x, y) → show() → экран обновился. clear() очищает буфер.</text>
+  <text x="790" y="548" fill="#6ee7b7" font-size="12" font-weight="700">lcd()</text>
+  <text x="850" y="548" fill="#7dd3fc" font-size="12" font-weight="700">show()</text>
+  <text x="920" y="548" fill="#fca5a5" font-size="12" font-weight="700">clear()</text>
+</svg>

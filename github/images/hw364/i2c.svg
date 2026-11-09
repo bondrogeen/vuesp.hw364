@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" fill="none" font-family="Inter, Roboto, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1200" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#05081f"/>
+      <stop offset="1" stop-color="#07112c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="620" rx="28" fill="url(#bg2)"/>
+  <g opacity="0.14" stroke="#94a3b8" stroke-width="1">
+    <path d="M0 80h1200M0 160h1200M0 240h1200M0 320h1200M0 400h1200M0 480h1200M0 560h1200"/>
+    <path d="M80 0v620M160 0v620M240 0v620M320 0v620M400 0v620M480 0v620M560 0v620M640 0v620M720 0v620M800 0v620M880 0v620M960 0v620M1040 0v620M1120 0v620"/>
+  </g>
+
+  <text x="80" y="72" fill="#6ee7b7" font-size="15" font-weight="700" letter-spacing="3">VUESP · HW-364</text>
+  <text x="80" y="122" fill="#ffffff" font-size="38" font-weight="800">Подключение дисплея</text>
+  <text x="80" y="156" fill="#94a3b8" font-size="17">Логическая схема I2C: ESP8266 → SSD1306</text>
+
+  <!-- ESP block -->
+  <rect x="110" y="200" width="330" height="270" rx="20" fill="#0d1b42" stroke="#1e3a6e" stroke-width="2"/>
+  <text x="275" y="248" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="800">ESP8266</text>
+  <text x="275" y="276" text-anchor="middle" fill="#94a3b8" font-size="14">NodeMCU · 3.3 V</text>
+  <g font-size="13" fill="#cbd5e1">
+    <text x="140" y="330">GPIO14</text>
+    <text x="140" y="366">GPIO12</text>
+    <text x="140" y="402">3V3</text>
+    <text x="140" y="438">GND</text>
+  </g>
+  <g fill="#6ee7b7" font-size="12" font-weight="700">
+    <text x="290" y="330">D6</text>
+    <text x="290" y="366">D5</text>
+    <text x="290" y="402">—</text>
+    <text x="290" y="438">—</text>
+  </g>
+
+  <!-- OLED block -->
+  <rect x="760" y="200" width="330" height="270" rx="20" fill="#031a1a" stroke="#10b981" stroke-width="2"/>
+  <rect x="790" y="226" width="270" height="140" rx="8" fill="#020617" stroke="#134e4a" stroke-width="2"/>
+  <text x="925" y="266" text-anchor="middle" fill="#6ee7b7" font-size="20" font-weight="800">SSD1306</text>
+  <text x="925" y="294" text-anchor="middle" fill="#e2e8f0" font-size="14">128 × 64 · 0.96″</text>
+  <text x="925" y="322" text-anchor="middle" fill="#94a3b8" font-size="12">I2C address 0x3C</text>
+  <text x="925" y="348" text-anchor="middle" fill="#10b981" font-size="12" font-weight="700">OLED</text>
+  <g font-size="13" fill="#cbd5e1">
+    <text x="790" y="402">SDA</text>
+    <text x="790" y="438">SCL</text>
+    <text x="930" y="402">VCC</text>
+    <text x="930" y="438">GND</text>
+  </g>
+
+  <!-- lines -->
+  <g stroke-width="4" stroke-linecap="round">
+    <path d="M440 322h320" stroke="#10b981"/>
+    <path d="M440 358h320" stroke="#28b7f0"/>
+    <path d="M440 398h320" stroke="#f87171"/>
+    <path d="M440 434h320" stroke="#94a3b8"/>
+  </g>
+  <g font-size="13" font-weight="700">
+    <text x="600" y="310" text-anchor="middle" fill="#6ee7b7">SDA · D6 / GPIO14</text>
+    <text x="600" y="346" text-anchor="middle" fill="#7dd3fc">SCL · D5 / GPIO12</text>
+    <text x="600" y="386" text-anchor="middle" fill="#fca5a5">3.3 V</text>
+    <text x="600" y="422" text-anchor="middle" fill="#cbd5e1">GND</text>
+  </g>
+
+  <rect x="110" y="518" width="980" height="62" rx="12" fill="#0b1538" stroke="#1e3a6e" stroke-width="1"/>
+  <text x="140" y="545" fill="#fbbf24" font-size="14" font-weight="700">Важно</text>
+  <text x="140" y="566" fill="#cbd5e1" font-size="13">На HW-364A/B дисплей уже распаян. В некоторых партиях SDA и SCL могут быть перепутаны — проверьте адрес 0x3C через I2C-сканер.</text>
+</svg>
